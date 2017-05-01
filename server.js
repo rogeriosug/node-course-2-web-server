@@ -80,6 +80,19 @@ app.get(
 );
 
 app.get(
+  '/projects',
+  (req, res) => {
+    res.render(
+      'projects.hbs',
+      {
+        pageTitle: 'Portfolio Page',
+        currentYear: new Date().getFullYear()
+      }
+    )
+  }
+);
+
+app.get(
   '/bad',
   (req, res) => {
     res.send(
