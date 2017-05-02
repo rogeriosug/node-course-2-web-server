@@ -85,8 +85,7 @@ app.get(
     res.render(
       'projects.hbs',
       {
-        pageTitle: 'Portfolio Page',
-        currentYear: new Date().getFullYear()
+        pageTitle: 'Projects'
       }
     )
   }
